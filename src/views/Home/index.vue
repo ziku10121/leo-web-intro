@@ -23,7 +23,7 @@ const mediaData = ref([
 </script>
 
 <template>
-  <div class="mx-auto max-w-[600px] px-6 pt-5 pb-40">
+  <div class="mx-auto max-w-[576px] px-6 pt-12 pb-16">
     <!-- Profile -->
     <div class="flex flex-col items-center space-y-2">
       <img
@@ -32,7 +32,7 @@ const mediaData = ref([
         width="145"
         height="145"
         decoding="async"
-        class="rounded-full text-center"
+        class="rounded-full text-center border"
         src="../../assets/imgs/white-profile.JPG"
       />
       <div class="text-center">
