@@ -1,7 +1,7 @@
 // tailwind.config.js
 export default {
-  purge: ["./src/**/*.html", "./src/**/*.vue", "./src/**/*.jsx"],
-  darkMode: false, // or 'media' or 'class'
+  content: ["./src/**/*.html", "./src/**/*.vue", "./src/**/*.jsx"],
+  darkMode: "media", // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
