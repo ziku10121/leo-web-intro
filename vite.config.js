@@ -8,7 +8,17 @@ export default defineConfig(({ mode }) => {
 
   return {
     plugins: [
-      vue(),
+      vue({
+        template: {
+          transformAssetUrls: {
+            // 將 ion-icon 設定為自定義元素
+            "ion-icon": "src",
+          },
+          compilerOptions: {
+            isCustomElement: (tag) => tag === "ion-icon",
+          },
+        },
+      }),
       AutoImport({
         imports: ["vue", "vue-router"],
         dts: false, // 不生成 TypeScript 生明文件
