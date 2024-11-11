@@ -1,5 +1,5 @@
 <script setup>
-import HelloWorld from "@/components/common/HelloWorld/index.vue";
+//TODO:等待完善Gear資料
 
 const gearData = ref([
   {

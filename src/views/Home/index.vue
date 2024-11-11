@@ -1,4 +1,6 @@
 <script setup>
+// TODO:所有樣式調整配色
+// TODO:修改Latest Blogs資料、修改Media連結
 const name = ref("Leo Li");
 const country = ref("Taiwan");
 const city = ref("Chiayi");
