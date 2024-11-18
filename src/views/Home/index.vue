@@ -6,9 +6,9 @@ const country = ref("Taiwan");
 const city = ref("Chiayi");
 const mediaData = ref([
   {
-    name: "logo-github",
-    blank_url: "https://github.com/ziku10121",
-    isActive: true,
+    name: "logo-github", // ion-icon name
+    blank_url: "https://github.com/ziku10121", // link URL
+    isActive: true, // 是否啟動
   },
   {
     name: "logo-instagram",
@@ -20,6 +20,21 @@ const mediaData = ref([
     name: "mail-outline",
     blank_url: "mailto:ziku10121@gmail.com",
     isActive: true,
+  },
+  {
+    name: "logo-medium",
+    blank_url: "https://medium.com/@ziku10121",
+    isActive: true,
+  },
+]);
+const postList = ref([
+  {
+    postUrl:
+      "https://medium.com/leo-li/box-sizing-%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B-80418e7d2c65",
+    postName: "Box Sizing",
+    describe: "每個Box裡有三種行為",
+    altText: "Box-Sizing",
+    imgSrc: "/src/assets/imgs/post/Box_Sizing.png",
   },
 ]);
 </script>
@@ -94,61 +109,36 @@ const mediaData = ref([
           <div class="border-t border-t-gray-100 p-4 text-secondary-500">
             <div class="space-y-4 w-full">
               <a
-                href="#"
+                v-for="post in postList"
+                :href="post.postUrl"
                 target="_blank"
                 class="block w-full px-4 py-3 border rounded-lg bg-gray-100 hover:bg-gray-300 duration-200"
               >
                 <div class="flex items-center">
-                  <div class="flex-grow">
+                  <div class="flex-grow multi-line">
                     <h4 class="text-md font-bold text-link-item-title">
-                      Picture
+                      {{ post.postName }}
                     </h4>
-                    <p class="text-sm text-link-item-subtitle">
-                      Japan Picture View
+                    <p
+                      class="text-sm text-link-item-subtitle"
+                      v-if="post.describe"
+                    >
+                      {{ post.describe }}
                     </p>
                   </div>
                   <div
                     class="flex-shrink-0 ml-4"
                     style="min-height: 1px; width: 50px"
+                    v-if="post.imgSrc || post.altText"
                   >
                     <img
-                      alt="Picture"
+                      :src="post.imgSrc"
+                      :alt="post.altText"
                       loading="lazy"
                       width="50"
                       height="50"
                       decoding="async"
                       style="color: transparent"
-                      src="https://picsum.photos/seed/{seed}/50/50"
-                    />
-                  </div>
-                </div>
-              </a>
-              <a
-                href="#"
-                target="_blank"
-                class="block w-full px-4 py-3 border rounded-lg bg-gray-100 hover:bg-gray-300 duration-200"
-              >
-                <div class="flex items-center">
-                  <div class="flex-grow">
-                    <h4 class="text-md font-bold text-link-item-title">
-                      Picture2
-                    </h4>
-                    <p class="text-sm text-link-item-subtitle">
-                      Japan Picture View
-                    </p>
-                  </div>
-                  <div
-                    class="flex-shrink-0 ml-4"
-                    style="min-height: 1px; width: 50px"
-                  >
-                    <img
-                      alt="Picture"
-                      loading="lazy"
-                      width="50"
-                      height="50"
-                      decoding="async"
-                      style="color: transparent"
-                      src="https://picsum.photos/seed/{seed-1}/50/50"
                     />
                   </div>
                 </div>
@@ -162,4 +152,11 @@ const mediaData = ref([
     <!-- Article -->
   </div>
 </template>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.multi-line {
+  display: -webkit-box; // 必須搭配
+  -webkit-box-orient: vertical; // 垂直排列子元素
+  overflow: hidden; // 隱藏超出容器的內容
+  -webkit-line-clamp: 2; // 顯示的行數
+}
+</style>

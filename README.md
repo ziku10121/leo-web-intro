@@ -1,7 +1,18 @@
 # leo-web-intro
 
-## Vue 3 + Vite
+## 簡介
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+開發一款簡單的個人部落格，使用 Vue3 和 Vite 的技術。
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## Getting Started
+
+### Install
+
+確保安裝完成
+
+- Node : 18.20.4
+- NPM : 10.7.0
+
+## Library
+
+- [ion-icons](https://ionic.io/ionicons)
