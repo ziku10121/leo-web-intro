@@ -12,8 +12,8 @@ const gearData = ref([
             title: "MacBook Pro",
             describe: "Apple M3 Pro (18G)",
             altText: "MacBook",
-            linkUrl: "#",
-            imgSrc: "#",
+            linkUrl: "https://www.apple.com/tw/",
+            imgSrc: "/src/assets/imgs/gear/MacBook_Pro.png",
           },
         ],
       },
@@ -29,10 +29,11 @@ const gearData = ref([
           },
           {
             title: "Desk",
-            describe: "",
+            describe: "IKEA LAGKAPTEN/ADILS 120x60",
             altText: "Desk",
-            linkUrl: "#",
-            imgSrc: "#",
+            linkUrl:
+              "https://www.ikea.com.tw/zh/products/home-workspace/home-desks/lagkapten-adils-spr-49416875",
+            imgSrc: "/src/assets/imgs/gear/Desk.png",
           },
           {
             title: "Desk Shelf",
@@ -51,28 +52,30 @@ const gearData = ref([
             describe: `BenQ 27"`,
             altText: "Screen",
             linkUrl: "#",
-            imgSrc: "#",
+            imgSrc: "/src/assets/imgs/gear/Screen.png",
           },
           {
             title: "Mouse",
-            describe: `Logitech`,
+            describe: `Logitech G102`,
             altText: "Mouse",
-            linkUrl: "#",
-            imgSrc: "#",
+            linkUrl:
+              "https://store.logitech.tw/products/g102-%E7%AC%AC%E4%BA%8C%E4%BB%A3-rgb%E7%82%AB%E5%BD%A9%E9%81%8A%E6%88%B2%E6%BB%91%E9%BC%A0?_pos=1&_sid=863659efa&_ss=r",
+            imgSrc: "/src/assets/imgs/gear/Mouse.png",
           },
           {
             title: "Speaker",
-            describe: "Logitech",
+            describe: "Logitech Z200(白)",
             altText: "Speaker",
-            linkUrl: "#",
-            imgSrc: "#",
+            linkUrl:
+              "https://www.logitech.com/zh-tw/products/speakers.html?srsltid=AfmBOorWECmlmD8SQMCy5rPH0aICbaSKNFWD1Hn8D7JjhVVzQbWq2bA7",
+            imgSrc: "/src/assets/imgs/gear/Speaker.png",
           },
           {
             title: "Keyboard",
-            describe: "Logitech",
+            describe: "darkFlash GD108(星空藍)",
             altText: "Keyboard",
-            linkUrl: "#",
-            imgSrc: "#",
+            linkUrl: "https://www.darkflash.tw/product/gd108",
+            imgSrc: "/src/assets/imgs/gear/Keyboard.png",
           },
         ],
       },
@@ -86,10 +89,11 @@ const gearData = ref([
         itemsData: [
           {
             title: "Stabilizer",
-            describe: "Insta360 Flow",
-            altText: "MacBook",
-            linkUrl: "#",
-            imgSrc: "../../assets/imgs/Insta360_Flow.webp",
+            describe: "Insta360 Flow(創作者套裝)",
+            altText: "Stabilizer",
+            linkUrl:
+              "https://store.insta360.com/product/flow?c=2221&from=search-bar-recommend",
+            imgSrc: "../../assets/imgs/gear/Insta360_Flow.png",
           },
         ],
       },
@@ -155,15 +159,12 @@ function getImageUrl(relativePath) {
                         {{ childItem.describe }}
                       </p>
                     </div>
-                    <div
-                      class="flex-shrink-0 ml-4"
-                      style="min-height: 1px; width: 50px"
-                    >
+                    <div class="flex-shrink-0 ml-4" style="min-height: 1px">
                       <img
                         alt="Picture"
                         loading="lazy"
-                        width="50"
-                        height="50"
+                        width="60"
+                        height="60"
                         decoding="async"
                         :src="getImageUrl(childItem.imgSrc)"
                       />
