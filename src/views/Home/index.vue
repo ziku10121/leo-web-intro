@@ -128,7 +128,7 @@ const postList = ref([
                   </div>
                   <div
                     class="flex-shrink-0 ml-4"
-                    style="min-height: 1px; width: 50px"
+                    style="min-height: 20px; width: 50px"
                     v-if="post.imgSrc || post.altText"
                   >
                     <img

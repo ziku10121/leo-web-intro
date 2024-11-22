@@ -159,12 +159,12 @@ function getImageUrl(relativePath) {
                         {{ childItem.describe }}
                       </p>
                     </div>
-                    <div class="flex-shrink-0 ml-4" style="min-height: 1px">
+                    <div class="flex-shrink-0 ml-4" style="min-height: 20px">
                       <img
                         alt="Picture"
                         loading="lazy"
-                        width="60"
-                        height="60"
+                        width="50"
+                        height="50"
                         decoding="async"
                         :src="getImageUrl(childItem.imgSrc)"
                       />

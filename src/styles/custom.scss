@@ -1,3 +1,10 @@
+body {
+  font-family: var(--font-style); /* 預設英文字體 */
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 ul {
   list-style: none;
 }
