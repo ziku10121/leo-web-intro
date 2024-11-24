@@ -41,7 +41,7 @@ export default defineConfig(({ mode }) => {
     },
     server: {
       port: 3000,
-      host: "172.20.10.12",
+      // host: "172.20.10.12",
       strictPort: false, // port被占用時嘗試下一個端口
       open: true, // 是否自動開啟瀏覽器
     },
