@@ -30,6 +30,7 @@ export default defineConfig(({ mode }) => {
       }),
     ],
     base: env.VITE_APP_ENV === "production" ? "./" : "/",
+    assetsInclude: ['**/*.png'],
     resolve: {
       alias: {
         /*

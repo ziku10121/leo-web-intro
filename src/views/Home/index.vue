@@ -33,7 +33,7 @@ const postList = ref([
     postName: "Box Sizing",
     describe: "每個Box裡有三種行為",
     altText: "Box-Sizing",
-    imgSrc: "/src/assets/imgs/post/Box_Sizing.png",
+    imgSrc: "https://firebasestorage.googleapis.com/v0/b/leoli-6f812.appspot.com/o/Box_Sizing.png?alt=media&token=3efe7ed0-4c32-4d75-8149-2df3c3653b30",
   },
 ]);
 </script>
@@ -49,7 +49,7 @@ const postList = ref([
         height="145"
         decoding="async"
         class="rounded-full text-center border"
-        src="../../assets/imgs/white-profile.JPG"
+        src="../../assets/imgs/white-profile.png"
       />
       <div class="text-center">
         <h2 class="text-2xl font-bold">{{ name }}</h2>
