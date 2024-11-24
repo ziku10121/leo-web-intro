@@ -1,0 +1,87 @@
+body {
+  font-family: var(--font-style); /* 預設英文字體 */
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color:var(--app-text-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #2d3436;
+}
+
+h3{
+  color:var(--color-orange);
+}
+
+.card{
+  color:var(--app-text-color);
+
+  .card-title{
+    background-color: var(--card-bg-color);
+
+    &:hover{
+      color:var(--card-title-hover-text-color)
+    }
+  }
+  .card-content{
+    background-color: var(--card-bg-color);
+  }
+  .card-item{
+    a{
+      &:hover{
+        background-color:var(--card-item-hover-bg-color);
+      }
+    }
+  }
+}
+
+.portfolio-card{
+
+  &:hover{
+    h5{
+      color:var(--card-title-hover-text-color);
+    }
+  }
+
+  .card-tag{
+    color:var(--color-green);
+    border:1px solid;
+    border-color:var(--color-green);
+
+    &:hover{
+      color:var(--color-white);
+      background-color:var(--color-green);
+    }
+  }
+}
+
+.portfolio-effects {
+  z-index: 1;
+  position: relative;
+  font-size: inherit;
+  font-family: inherit;
+  outline: none;
+  overflow: hidden;
+
+  &::after{
+    content: '';
+    z-index: 2;
+    background-color: hsla(0, 0%, 100%, 0.2);;
+    position: absolute;
+    top: -50%;
+    bottom: -50%;
+    width: 2em;
+    transform: translate3d(-1000%, 0, 0) rotate(35deg);
+  }
+
+  &:hover::after {
+    transition: transform 0.6s ease-in-out;
+    transform: translate3d(1700%, 0, 0) rotate(35deg);
+  }
+}
