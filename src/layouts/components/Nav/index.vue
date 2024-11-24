@@ -25,11 +25,11 @@ const goPage = (pathName) => {
     :class="isLogo ? 'justify-between' : 'justify-center'"
   >
     <a v-if="isLogo" class="shrink-0 text-primary" href="/"></a>
-    <ul class="flex">
+    <ul class="flex nav">
       <li class="transform hover:scale-105 duration-200">
         <a
-          class="px-4 py-3 text-primary text-md text-center rounded-md hover:text-breeze transition-colors duration-200"
-          :class="route.name === 'Home' ? 'bg-cityLight' : ''"
+          class="px-4 py-3 text-primary text-md text-center rounded-md duration-200 "
+          :class="route.name === 'Home' ? 'active' : ''"
           href="/"
           @click.prevent="goPage('Home')"
         >
@@ -38,8 +38,8 @@ const goPage = (pathName) => {
       </li>
       <li class="transform hover:scale-105 duration-200">
         <a
-          class="px-4 py-3 text-primary text-md text-center rounded-md hover:text-breeze transition-colors duration-200"
-          :class="route.name === 'About' ? 'bg-cityLight' : ''"
+          class="px-4 py-3 text-primary text-md text-center rounded-md duration-200"
+          :class="route.name === 'About' ? 'active' : ''"
           href="/about"
           @click.prevent="goPage('About')"
         >
@@ -48,8 +48,8 @@ const goPage = (pathName) => {
       </li>
       <li class="transform hover:scale-105 duration-200">
         <a
-          class="px-4 py-3 text-primary text-md text-center rounded-md hover:text-breeze transition-colors duration-200"
-          :class="route.name === 'Gear' ? 'bg-cityLight' : ''"
+          class="px-4 py-3 text-primary text-md text-center rounded-md duration-200"
+          :class="route.name === 'Gear' ? 'active' : ''"
           href="/gear"
           @click.prevent="goPage('Gear')"
         >
@@ -58,8 +58,8 @@ const goPage = (pathName) => {
       </li>
       <li class="transform hover:scale-105 duration-200">
         <a
-          class="px-4 py-3 text-primary text-md text-center rounded-md hover:text-breeze transition-colors duration-200"
-          :class="route.name === 'Portfolio' ? 'bg-cityLight' : ''"
+          class="px-4 py-3 text-primary text-md text-center rounded-md duration-200"
+          :class="route.name === 'Portfolio' ? 'active' : ''"
           href="/portfolio"
           @click.prevent="goPage('Portfolio')"
         >

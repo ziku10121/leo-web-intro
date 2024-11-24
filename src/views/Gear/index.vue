@@ -116,12 +116,12 @@ function getImageUrl(relativePath) {
       <div class="flex flex-col" v-for="gearItem in gearData">
         <h3 class="text-2xl font-bold mt-6 mb-4">{{ gearItem.category }}</h3>
         <div
-          class="mb-4 divide-y divide-gray-100 overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm"
+          class="mb-4 overflow-hidden rounded-sm border border-black shadow-md card"
           v-for="gear in gearItem.data"
         >
           <details class="group">
             <summary
-              class="flex cursor-pointer list-none items-center justify-between p-4 text-lg font-medium text-gray-100 bg-gray-900"
+              class="flex cursor-pointer list-none items-center justify-between p-4 text-lg hover:font-bold card-title"
             >
               {{ gear.title }}
               <div class="text-secondary-500">
@@ -142,13 +142,13 @@ function getImageUrl(relativePath) {
               </div>
             </summary>
             <div
-              class="flex flex-col gap-3 border-t border-t-gray-100 p-4 text-secondary-500"
+              class="flex flex-col gap-3 border-t border-t-black p-4 text-secondary-500 card-content"
             >
-              <div class="space-y-4 w-full" v-for="childItem in gear.itemsData">
+              <div class="space-y-4 w-full card-item" v-for="childItem in gear.itemsData">
                 <a
                   :href="childItem.linkUrl"
                   target="_blank"
-                  class="block w-full px-4 py-3 border rounded-lg bg-gray-100 hover:bg-gray-300 duration-200"
+                  class="block w-full px-4 py-3 border border-gray-900 rounded-lg duration-200"
                 >
                   <div class="flex items-center">
                     <div class="flex-grow">

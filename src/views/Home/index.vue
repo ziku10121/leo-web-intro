@@ -1,6 +1,4 @@
 <script setup>
-// TODO:所有樣式調整配色
-// TODO:修改Latest Blogs資料、修改Media連結
 const name = ref("Leo Li");
 const country = ref("Taiwan");
 const city = ref("Chiayi");
@@ -70,7 +68,7 @@ const postList = ref([
       <template v-for="media in mediaData">
         <a
           v-if="media.isActive"
-          class="flex items-center justify-center text-4xl hover:text-gray-200"
+          class="flex items-center justify-center text-4xl hover:scale-110 duration-100 media-icon"
           :href="media.blank_url"
           target="_blank"
         >
@@ -82,11 +80,11 @@ const postList = ref([
     <!-- Article -->
     <div class="w-full">
       <div
-        class="divide-y divide-gray-100 overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm"
+        class="overflow-hidden rounded-sm border border-black shadow-md card"
       >
         <details class="group" open>
           <summary
-            class="flex cursor-pointer list-none items-center justify-between p-4 text-lg font-medium text-gray-100 bg-gray-900"
+            class="flex cursor-pointer list-none items-center justify-between p-4 text-lg hover:font-bold card-title"
           >
             Latest Blogs
             <div class="text-secondary-500">
@@ -106,13 +104,13 @@ const postList = ref([
               </svg>
             </div>
           </summary>
-          <div class="border-t border-t-gray-100 p-4 text-secondary-500">
-            <div class="space-y-4 w-full">
+          <div class="border-t border-t-black p-4 text-secondary-500 card-content">
+            <div class="space-y-4 w-full card-item">
               <a
                 v-for="post in postList"
                 :href="post.postUrl"
                 target="_blank"
-                class="block w-full px-4 py-3 border rounded-lg bg-gray-100 hover:bg-gray-300 duration-200"
+                class="block w-full px-4 py-3 border border-gray-900 rounded-lg duration-200"
               >
                 <div class="flex items-center">
                   <div class="flex-grow multi-line">
@@ -149,10 +147,16 @@ const postList = ref([
       </div>
     </div>
 
-    <!-- Article -->
   </div>
 </template>
 <style lang="scss" scoped>
+.media-icon{
+  color:var(--media-icon-color);
+  &:hover{
+    color:var(--media-icon-hover-color);
+  }
+}
+
 .multi-line {
   display: -webkit-box; // 必須搭配
   -webkit-box-orient: vertical; // 垂直排列子元素

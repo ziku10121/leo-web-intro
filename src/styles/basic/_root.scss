@@ -1,3 +1,27 @@
 :root {
+  --color-bg:#E7DDCF;
+  --color-bg-light: #DBCAB6;
+  --color-bg-dark:#181818;
+  --color-txt: #3D3D3D;
+  --color-orange:#DD6013;
+  --color-orange-dark:#96410D;
+  --color-green: #789904;
+  --color-white: #ffffff;
+
+
   --font-style: "Roboto" "Noto Sans TC", sans-serif;
+  --app-bg-color:var(--color-bg);
+  --app-text-color:var(--color-txt);
+  --app-nav-hover-color:var(--color-orange);
+  --app-nav-active-color:var(--color-white);
+  --app-nav-active-bg-color:var(--color-orange);
+
+  /*Media Icon*/
+  --media-icon-color:var(--color-bg-dark);
+  --media-icon-hover-color:var(--color-txt);
+
+  /*Card*/
+  --card-title-hover-text-color:var(--color-orange);
+  --card-item-bg-color:var(--color-bg);
+  --card-item-hover-bg-color:var(--color-bg-light);
 }

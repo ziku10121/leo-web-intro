@@ -66,7 +66,7 @@ const workData = ref([
   <div class="mx-auto max-w-[576px] px-6 pt-6 md:pt-12 pb-16">
     <!-- About -->
     <div class="about md:gap-4 mb-6">
-      <h2 class="text-3xl font-bold mb-4">About</h2>
+      <h3 class="text-3xl font-bold mb-4">About</h3>
       <div class="flex flex-col gap-3">
         <p>大家好！我是Leo。目前生活在台北的一個北漂青年。</p>
         <p>
@@ -76,13 +76,13 @@ const workData = ref([
           <p class="mb-2 md:mb-4">
             除了工作之餘，我平常生活也離不開以下幾件事：
           </p>
-          <div>
+          <div class="interest-container">
             <div v-for="interest in interestData" class="flex items-top mt-2">
-              <div class="mr-3 text-xl">
+              <div class="mr-3 text-xl interest-icon">
                 <ion-icon :name="interest.icon"></ion-icon>
               </div>
               <div>
-                <span class="font-bold text-md">{{ interest.title }}</span>
+                <span class="font-bold text-md interest-title">{{ interest.title }}</span>
                 <span>{{ interest.text }}</span>
               </div>
             </div>
@@ -92,7 +92,7 @@ const workData = ref([
     </div>
     <!-- Education -->
     <div class="education md:gap-4 mb-6">
-      <h2 class="text-3xl font-bold mb-4">Education</h2>
+      <h3 class="text-3xl font-bold mb-4">Education</h3>
       <div>
         <div class="flex flex-col text-lg" v-for="education in educationData">
           <div class="school-name mb-1">
@@ -108,7 +108,7 @@ const workData = ref([
     </div>
     <!-- Work -->
     <div class="work">
-      <h2 class="text-3xl font-bold mb-4">Work</h2>
+      <h3 class="text-3xl font-bold mb-4">Work</h3>
       <p class="mb-5">
         我專注於 JavaScript、Vue、ASP.NET Web API、網頁開發、UI/UX
         設計及產品設計，並持續深化現有的知識領域。同時，我也積極學習新事物，不僅限於工作領域，並拓展自己的視野與技能，保持對創新和變化的開放態度。
@@ -142,4 +142,13 @@ const workData = ref([
     </div>
   </div>
 </template>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.interest-container{
+  .interest-icon{
+    color:var(--color-green);
+  }
+  .interest-title{
+    color:var(--color-green);
+  }
+}
+</style>

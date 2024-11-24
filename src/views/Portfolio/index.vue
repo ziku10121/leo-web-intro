@@ -15,31 +15,31 @@ const portfolioListData = [
 
 <template>
   <div class="mx-auto max-w-[576px] px-6 pt-6 md:pt-12 pb-16">
-    <h2 class="text-2xl font-bold py-5 md:py-6">My Portfolio</h2>
+    <h3 class="text-2xl font-bold py-5 md:py-6">My Portfolio</h3>
 
     <div class="flex flex-col gap-5">
       <template v-for="portfolio in portfolioListData">
         <a
           :href="portfolio.linkUrl"
-          class="flex flex-col items-center md:flex-row md:max-w-xl bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+          class="flex flex-col items-center md:flex-row md:max-w-xl border border-black rounded-md shadow-sm hover:shadow-lg portfolio-card portfolio-effects"
         >
           <img
-            class="object-cover w-full rounded-t-lg h-48 md:h-60 md:w-48 md:rounded-none md:rounded-s-lg"
+            class="object-cover w-full rounded-t-md h-48 md:h-60 md:w-48 md:rounded-none md:rounded-s-md"
             :src="portfolio.imgSrc"
             alt="IMG"
           />
           <div class="flex flex-col justify-between p-4 leading-normal">
             <h5
-              class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              class="mb-2 text-2xl font-bold tracking-tight"
             >
               {{ portfolio.name }}
             </h5>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            <p class="mb-3 font-normal">
               {{ portfolio.describe }}
             </p>
             <div class="flex flex-wrap gap-2">
               <div
-                class="flex items-center px-2 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                class="flex items-center px-2 py-1 text-sm font-medium text-center rounded-lg card-tag duration-300"
                 v-for="tag in portfolio.tags"
               >
                 {{ tag }}
@@ -51,4 +51,6 @@ const portfolioListData = [
     </div>
   </div>
 </template>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+
+</style>

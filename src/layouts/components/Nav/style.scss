@@ -1,0 +1,19 @@
+.nav{
+  a{
+    color:var(--app-text-color);
+
+    :hover{
+      color:var(--app-text-hover-color);
+      background: var(--app-text-hover-bg-color);
+    }
+  }
+}
+a{
+  &:hover{
+    color:var(--app-nav-hover-color);
+  }
+  &.active{
+    color:var(--app-nav-active-color);
+    background-color: var(--app-nav-active-bg-color);
+  }
+}
