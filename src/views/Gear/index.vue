@@ -13,7 +13,7 @@ const gearData = ref([
             describe: "Apple M3 Pro (18G)",
             altText: "MacBook",
             linkUrl: "https://www.apple.com/tw/",
-            imgSrc: "/src/assets/imgs/gear/MacBook_Pro.png",
+            imgSrc: "https://firebasestorage.googleapis.com/v0/b/leoli-6f812.appspot.com/o/MacBook_Pro.png?alt=media&token=d4b42d17-dd4d-48c2-a374-e761ab08ca2c",
           },
         ],
       },
@@ -33,7 +33,7 @@ const gearData = ref([
             altText: "Desk",
             linkUrl:
               "https://www.ikea.com.tw/zh/products/home-workspace/home-desks/lagkapten-adils-spr-49416875",
-            imgSrc: "/src/assets/imgs/gear/Desk.png",
+            imgSrc: "https://firebasestorage.googleapis.com/v0/b/leoli-6f812.appspot.com/o/Desk.png?alt=media&token=ca1cd1a2-cedf-4ab9-a4a7-7f13c1350b7e",
           },
           {
             title: "Desk Shelf",
@@ -52,7 +52,7 @@ const gearData = ref([
             describe: `BenQ 27"`,
             altText: "Screen",
             linkUrl: "#",
-            imgSrc: "/src/assets/imgs/gear/Screen.png",
+            imgSrc: "https://firebasestorage.googleapis.com/v0/b/leoli-6f812.appspot.com/o/Screen.png?alt=media&token=e79e7ba0-5e78-4937-b6f0-1b3bc40ac6c5",
           },
           {
             title: "Mouse",
@@ -60,7 +60,7 @@ const gearData = ref([
             altText: "Mouse",
             linkUrl:
               "https://store.logitech.tw/products/g102-%E7%AC%AC%E4%BA%8C%E4%BB%A3-rgb%E7%82%AB%E5%BD%A9%E9%81%8A%E6%88%B2%E6%BB%91%E9%BC%A0?_pos=1&_sid=863659efa&_ss=r",
-            imgSrc: "/src/assets/imgs/gear/Mouse.png",
+            imgSrc: "https://firebasestorage.googleapis.com/v0/b/leoli-6f812.appspot.com/o/Mouse.png?alt=media&token=fc2a1b59-5ebc-4e0a-99df-a766bb89af7d",
           },
           {
             title: "Speaker",
@@ -68,14 +68,14 @@ const gearData = ref([
             altText: "Speaker",
             linkUrl:
               "https://www.logitech.com/zh-tw/products/speakers.html?srsltid=AfmBOorWECmlmD8SQMCy5rPH0aICbaSKNFWD1Hn8D7JjhVVzQbWq2bA7",
-            imgSrc: "/src/assets/imgs/gear/Speaker.png",
+            imgSrc: "https://firebasestorage.googleapis.com/v0/b/leoli-6f812.appspot.com/o/Speaker.png?alt=media&token=87f0b30d-7896-4148-9898-c47d98b782cc",
           },
           {
             title: "Keyboard",
             describe: "darkFlash GD108(星空藍)",
             altText: "Keyboard",
             linkUrl: "https://www.darkflash.tw/product/gd108",
-            imgSrc: "/src/assets/imgs/gear/Keyboard.png",
+            imgSrc: "https://firebasestorage.googleapis.com/v0/b/leoli-6f812.appspot.com/o/Keyboard.png?alt=media&token=c3081490-371b-4bcf-9219-b4f68c9c686f",
           },
         ],
       },
