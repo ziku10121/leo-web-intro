@@ -80,8 +80,15 @@ h3 {
 
 .portfolio-card {
   &:hover {
-    h5 {
+    h5 span {
       color: var(--card-title-hover-text-color);
+    }
+  }
+
+  ion-icon {
+    &:hover {
+      color: var(--card-title-hover-text-color);
+      cursor: pointer;
     }
   }
 
@@ -93,6 +100,15 @@ h3 {
     &:hover {
       color: var(--color-white);
       background-color: var(--color-green);
+    }
+  }
+
+  ul {
+    list-style: disc;
+    padding-left: 16px;
+    margin: 8px 0;
+    li {
+      margin: 8px 0;
     }
   }
 }
@@ -118,6 +134,6 @@ h3 {
 
   &:hover::after {
     transition: transform 0.6s ease-in-out;
-    transform: translate3d(1700%, 0, 0) rotate(35deg);
+    transform: translate3d(2500%, 0, 0) rotate(35deg);
   }
 }
