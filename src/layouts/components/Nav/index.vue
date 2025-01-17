@@ -15,6 +15,25 @@ const isGoBack = ref(window.history.length > 1);
 const router = useRouter(); //獲取路由實例
 const route = useRoute(); //獲取當前路由實例
 
+const pageList = [
+  {
+    name: "Home",
+    href: "/",
+  },
+  {
+    name: "About",
+    href: "/about",
+  },
+  // {
+  //   name: "Gear",
+  //   href: "/gear",
+  // },
+  {
+    name: "Portfolio",
+    href: "/portfolio",
+  },
+];
+
 const goPage = (pathName) => {
   router.push({ name: pathName });
 };
@@ -26,44 +45,17 @@ const goPage = (pathName) => {
   >
     <a v-if="isLogo" class="shrink-0 text-primary" href="/"></a>
     <ul class="flex nav">
-      <li class="transform hover:scale-105 duration-200">
-        <a
-          class="px-4 py-3 text-primary text-md text-center rounded-md duration-200 "
-          :class="route.name === 'Home' ? 'active' : ''"
-          href="/"
-          @click.prevent="goPage('Home')"
-        >
-          Home
-        </a>
-      </li>
-      <li class="transform hover:scale-105 duration-200">
+      <li
+        v-for="page in pageList"
+        class="transform hover:scale-105 duration-200"
+      >
         <a
           class="px-4 py-3 text-primary text-md text-center rounded-md duration-200"
-          :class="route.name === 'About' ? 'active' : ''"
-          href="/about"
-          @click.prevent="goPage('About')"
+          :class="route.name === page.name ? 'active' : ''"
+          :href="page.href"
+          @click.prevent="goPage(page.name)"
         >
-          About
-        </a>
-      </li>
-      <li class="transform hover:scale-105 duration-200">
-        <a
-          class="px-4 py-3 text-primary text-md text-center rounded-md duration-200"
-          :class="route.name === 'Gear' ? 'active' : ''"
-          href="/gear"
-          @click.prevent="goPage('Gear')"
-        >
-          Gear
-        </a>
-      </li>
-      <li class="transform hover:scale-105 duration-200">
-        <a
-          class="px-4 py-3 text-primary text-md text-center rounded-md duration-200"
-          :class="route.name === 'Portfolio' ? 'active' : ''"
-          href="/portfolio"
-          @click.prevent="goPage('Portfolio')"
-        >
-          Portfolio
+          {{ page.name }}
         </a>
       </li>
     </ul>
