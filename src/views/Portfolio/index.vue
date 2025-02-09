@@ -3,17 +3,17 @@
 const portfolioListData = [
   {
     title: "HSC",
-    subTitle: "企業乘車票券電子化",
+    subTitle: "企業乘車票券電子化(手機端)",
     describe:
       "參與日本乘車券電子化推行專案，專案核心是整合票券公司/券商的系統，實現乘車券的電子化。合作企業可透過平台為員工發行電子乘車券，員工只需使用手機即可輕鬆搭乘計程車服務。 ",
-    linkUrl: "https://google.com.tw",
+    linkUrl: "#",
     works: [
       "解決 BUG、優化共五十幾個項目，提升系統穩定性及改善用戶體驗。",
       "開發QRCode方式轉讓車票。",
       "解決各統系統與瀏覽器相容性問題，保證用戶體驗穩定。",
     ],
     imgSrc:
-      "https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?q=80&w=2969&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://firebasestorage.googleapis.com/v0/b/leoli-6f812.appspot.com/o/projects%2FHSC.png?alt=media&token=774d5e5d-eda9-4ee2-b2f1-7051a5b03790",
     tags: [
       "HTML / CSS",
       "JavaScript",
@@ -35,7 +35,7 @@ const portfolioListData = [
       "優化前端操作性、效能。",
     ],
     imgSrc:
-      "https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?q=80&w=2969&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://firebasestorage.googleapis.com/v0/b/leoli-6f812.appspot.com/o/projects%2FTShop2.0.png?alt=media&token=84d893d3-102b-4639-88b5-c541891cc613",
     tags: [
       "HTML / CSS",
       "JavaScript",
@@ -52,13 +52,13 @@ const portfolioListData = [
     subTitle: "AI點餐服務系統",
     describe:
       "MenuSync是一個菜單掃描AI辨識系統，可以附加在KIOSK、POS機器上。此系統提供菜單設計及AI辨識系統參數調整，提供客戶快速而簡易的製作AI辨識菜單、簡易又方便設置AI辨識參數。",
-    linkUrl: "#",
+    linkUrl: "https://github.com/ziku10121/MenuSync",
     works: [
       "負責網頁前端電腦版的切版、設計，與後端討論API格式相關事項。",
       "使用mqtt通訊溝通、串接API資料，測試並修改菜單設計與AI辨識的參數設定系統。",
     ],
     imgSrc:
-      "https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?q=80&w=2969&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://firebasestorage.googleapis.com/v0/b/leoli-6f812.appspot.com/o/projects%2FOrderX.png?alt=media&token=0b4d8505-47b8-48c1-a971-64d3b4125daf",
     tags: ["HTML / CSS", "JavaScript", "Quasar", "Vue3.js", "WebRTC"],
   },
   {
@@ -66,13 +66,13 @@ const portfolioListData = [
     subTitle: "智慧洗手廣告機 ",
     describe:
       "Hand Sanitizer Signage Station是一個廣告結合量測溫度系統，可以整合多台DKS-2150的廣告資訊。提供廣告資訊介面更換功能，並提供即時性更換，方便使用者一機多控的操作。",
-    linkUrl: "#",
+    linkUrl: "https://github.com/ziku10121/handwash",
     works: [
       "負責網頁前端電腦版的切版、設計，與後端討論API格式相關事項。 ",
       "使用mqtt通訊溝通、串接API資料， 測試並修改廣告機後台系統。",
     ],
     imgSrc:
-      "https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?q=80&w=2969&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://firebasestorage.googleapis.com/v0/b/leoli-6f812.appspot.com/o/projects%2FHandwash.png?alt=media&token=06eeb6bd-a6c4-4ba0-80d9-dec14654b9cc",
     tags: ["HTML / CSS", "JavaScript", "Quasar", "Vue3.js"],
   },
   {
@@ -80,7 +80,7 @@ const portfolioListData = [
     subTitle: "前台",
     describe:
       "提供客戶進行長效單下單，並隨時可看到當前條件單的狀態，與操作此單狀態。並可檢查此單歷程。同時可查詢歷史條件單紀錄。",
-    linkUrl: "#",
+    linkUrl: "https://github.com/ziku10121/GTC",
     works: [
       "負責網頁前端電腦版的切版、設計與RWD。",
       "與後端討論API格式相關事項。",
@@ -88,7 +88,7 @@ const portfolioListData = [
       "測試並修改電腦與手機板長校單系統。",
     ],
     imgSrc:
-      "https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?q=80&w=2969&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://firebasestorage.googleapis.com/v0/b/leoli-6f812.appspot.com/o/projects%2FGTC_FrontDesk.png?alt=media&token=cf93b4f2-479b-4f83-9b77-cef37fa75057",
     tags: ["HTML / CSS", "Bootstrap", "JavaScript", "jQuery", "MSSQL"],
   },
   {
@@ -102,7 +102,7 @@ const portfolioListData = [
       "負責網頁頁面切版與設計，串接API資料。",
     ],
     imgSrc:
-      "https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?q=80&w=2969&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://firebasestorage.googleapis.com/v0/b/leoli-6f812.appspot.com/o/projects%2FGTC_Admin.png?alt=media&token=45c91580-6899-42c4-81dc-564f4fcf2d54",
     tags: ["HTML / CSS", "Bootstrap", "JavaScript", "jQuery", "MSSQL"],
   },
   {
@@ -115,7 +115,7 @@ const portfolioListData = [
       "負責網頁的切版、設計。 撰寫API、串接API資料。",
     ],
     imgSrc:
-      "https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?q=80&w=2969&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://firebasestorage.googleapis.com/v0/b/leoli-6f812.appspot.com/o/projects%2FDynamic365.png?alt=media&token=124c6d15-aeee-496b-a652-7374572b4281",
     tags: ["HTML / CSS", "Bootstrap", "JavaScript", "Vue3.js", "C#", "MSSQL"],
   },
 ];
@@ -130,12 +130,16 @@ const portfolioListData = [
         <div
           class="flex flex-col items-start md:max-w-xl border border-black rounded-md shadow-sm hover:shadow-lg portfolio-card portfolio-effects"
         >
-          <a :href="portfolio.linkUrl" target="_blank">
+          <a>
             <div class="flex flex-col md:flex-row md:max-w-xl">
               <div class="w-100 md:h-40 md:w-2/5">
                 <img
                   class="w-full md:rounded-ee-md"
-                  :src="portfolio.imgSrc"
+                  :src="
+                    portfolio.imgSrc ||
+                    'https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?q=80&w=2969&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+                  "
+                  loading="lazy"
                   alt="IMG"
                 />
               </div>
@@ -148,7 +152,14 @@ const portfolioListData = [
                   <span>
                     {{ portfolio.title }}
                   </span>
-                  <ion-icon name="logo-github" class="ps-2"> </ion-icon>
+                  <a :href="portfolio.linkUrl" target="_blank">
+                    <ion-icon
+                      v-if="portfolio.linkUrl != '#'"
+                      name="logo-github"
+                      class="ps-2"
+                    >
+                    </ion-icon>
+                  </a>
                 </h5>
                 <h6 class="mb-2 text-md font-bold tracking-tight">
                   {{ portfolio.subTitle }}
