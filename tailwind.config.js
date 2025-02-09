@@ -6,8 +6,11 @@ export default {
     extend: {
       colors: {
         primary: "#2d3436",
+        orange: "#dd6013bf",
         cityLight: "#dfe6e9",
         breeze: "#b2bec3",
+        green: "#749551",
+        lake: "#2d5975",
       },
     },
   },

@@ -3,6 +3,7 @@
 const name = ref("Leo Li");
 const country = ref("Taiwan");
 const city = ref("Chiayi");
+const aboutTag = ref(["Frontend Engineer", "Vue.js", "3~5 Years"]);
 const mediaData = ref([
   {
     name: "logo-github", // ion-icon name
@@ -33,7 +34,8 @@ const postList = ref([
     postName: "Box Sizing",
     describe: "每個Box裡有三種行為",
     altText: "Box-Sizing",
-    imgSrc: "https://firebasestorage.googleapis.com/v0/b/leoli-6f812.appspot.com/o/Box_Sizing.png?alt=media&token=3efe7ed0-4c32-4d75-8149-2df3c3653b30",
+    imgSrc:
+      "https://firebasestorage.googleapis.com/v0/b/leoli-6f812.appspot.com/o/Box_Sizing.png?alt=media&token=3efe7ed0-4c32-4d75-8149-2df3c3653b30",
   },
 ]);
 </script>
@@ -62,6 +64,14 @@ const postList = ref([
           </div>
           <h5 class="text-l font-bold">{{ city }}，{{ country }}</h5>
         </div>
+      </div>
+    </div>
+    <div class="flex justify-center items-center space-x-2 py-3">
+      <div
+        v-for="tag in aboutTag"
+        class="px-2 py-1 border border-gray-900 rounded-lg"
+      >
+        {{ tag }}
       </div>
     </div>
     <!-- Media List -->
@@ -105,7 +115,9 @@ const postList = ref([
               </svg>
             </div>
           </summary>
-          <div class="border-t border-t-black p-4 text-secondary-500 card-content">
+          <div
+            class="border-t border-t-black p-4 text-secondary-500 card-content"
+          >
             <div class="space-y-4 w-full card-item">
               <a
                 v-for="post in postList"
@@ -147,14 +159,13 @@ const postList = ref([
         </details>
       </div>
     </div>
-
   </div>
 </template>
 <style lang="scss" scoped>
-.media-icon{
-  color:var(--media-icon-color);
-  &:hover{
-    color:var(--media-icon-hover-color);
+.media-icon {
+  color: var(--media-icon-color);
+  &:hover {
+    color: var(--media-icon-hover-color);
   }
 }
 
